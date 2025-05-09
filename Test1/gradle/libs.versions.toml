@@ -1,0 +1,37 @@
+[versions]
+spatialsdk = "0.6.0"
+agp = "8.10.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# Meta Spatial SDK Libraries
+meta-spatial-sdk-base = { group = "com.meta.spatial", name = "meta-spatial-sdk", version.ref = "spatialsdk" }
+meta-spatial-sdk-vr = { group = "com.meta.spatial", name = "meta-spatial-sdk-vr", version.ref = "spatialsdk" }
+meta-spatial-sdk-animation = { group = "com.meta.spatial", name = "meta-spatial-sdk-animation", version.ref = "spatialsdk" }
+meta-spatial-sdk-compose = { group = "com.meta.spatial", name = "meta-spatial-sdk-compose", version.ref = "spatialsdk" }
+meta-spatial-sdk-ovrmetrics = { group = "com.meta.spatial", name = "meta-spatial-sdk-ovrmetrics", version.ref = "spatialsdk" }
+meta-spatial-sdk-physics = { group = "com.meta.spatial", name = "meta-spatial-sdk-physics", version.ref = "spatialsdk" }
+meta-spatial-sdk-toolkit = { group = "com.meta.spatial", name = "meta-spatial-sdk-toolkit", version.ref = "spatialsdk" }
+meta-spatial-sdk-mruk = { group = "com.meta.spatial", name = "meta-spatial-sdk-mruk", version.ref = "spatialsdk" }
+meta-spatial-sdk-castinputforward = { group = "com.meta.spatial", name = "meta-spatial-sdk-castinputforward", version.ref = "spatialsdk" }
+meta-spatial-sdk-hotreload = { group = "com.meta.spatial", name = "meta-spatial-sdk-hotreload", version.ref = "spatialsdk" }
+meta-spatial-sdk-datamodelinspector = { group = "com.meta.spatial", name = "meta-spatial-sdk-datamodelinspector", version.ref = "spatialsdk" }
+meta-spatial-sdk-isdk = { group = "com.meta.spatial", name = "meta-spatial-sdk-isdk", version.ref = "spatialsdk" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+meta-spatial-plugin = { id = "com.meta.spatial.plugin", version.ref = "spatialsdk" }
